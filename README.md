@@ -40,7 +40,22 @@ python3.8 app/src/server.py
 ```
 
 
-## Contributing
+## Docker Image Build
 
+Build Image
+```bash
+docker image build -t <your-tag>  . 
+```
 
+Push Image 
+```bash 
+docker image push <your-tag>
+```
+
+## Run Docker Container
+
+Run Container
+```bash
+docker push <your-image>
+```
 
