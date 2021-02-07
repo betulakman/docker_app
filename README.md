@@ -4,7 +4,6 @@
 
  Simple app build on Python Flask. 
 
-Foobar is a Python library for dealing with word pluralization.
 
 ## Prerequisites 
 
