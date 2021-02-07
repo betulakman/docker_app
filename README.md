@@ -56,6 +56,6 @@ docker image push <your-tag>
 
 Run Container
 ```bash
-docker container run -d --name sampleapp -p <hostport>:5000  <docker-image>
+docker container run -d --name sampleapp  -p <hostport>:5000  <docker-image>
 ```
 
