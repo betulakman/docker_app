@@ -1,9 +1,13 @@
-from flask import Flask
+from flask import ( 
+    Flask,
+    render_template
+)
+
 server = Flask(__name__)
 
 @server.route("/")
-def hello():
-    return "Hello World, Hello from Earth"
+def home():
+    return render_template("index.html")
 
 @server.route("/sample")
 def sample():

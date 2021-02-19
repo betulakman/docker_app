@@ -4,6 +4,25 @@
 
  Simple app build on Python Flask. 
 
+ 
+ ## Aplication Structure 
+
+ ```
+ .
+├── app
+│   ├── requirements.txt
+│   └── src
+│       ├── server.py
+│       └── templates
+│           └── index.html
+├── docker-compose
+│   └── docker-compose.yml
+├── Dockerfile
+└── README.md
+
+``` 
+
+
 
 ## Prerequisites 
 
@@ -57,5 +76,19 @@ docker image push <your-tag>
 Run Container
 ```bash
 docker container run -d --name sampleapp  -p <hostport>:5000  <docker-image>
+```
+
+## Docker-Compose
+
+Change Directory
+```
+cd docker-compose
+```
+
+* Note:  Modify docker-compose.yml file(optional)
+
+Build image and Run Container
+```
+docker-compose up -d --build
 ```
 
