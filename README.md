@@ -28,8 +28,11 @@
 
 ## Folders
 
-
-
+| Folder  | Description |
+| ------------- | ------------- |
+| [app](app) | Flask Application Code. |
+| [docker-compose](docker-compose)  | docker-compose files  |
+| [files](files)  | contains static files for test purposes |
 
 
 
