@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
 
   app:
@@ -6,19 +8,11 @@ services:
       context: ../
       dockerfile: Dockerfile
     container_name: myapp
+    deploy:
+      replicas: 1
     ports: 
       - "8080:5000"
-    networks: 
-      - myapp_network
     restart:
       on-failure  
-    volumes:
-      - myapp_volume:/code
-
-networks:
-  myapp_network: {}
-
-volumes:
-  myapp_volume: 
   
 
